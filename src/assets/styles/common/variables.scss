@@ -1,0 +1,94 @@
+// elementui
+$--color-primary: #1C65DD;
+$space: 8px;
+$form-item1: 294px; // 三列弹窗form--改为两列
+$form-item2: 186px; // 两列弹窗form
+$radius: 4px; // 圆角
+$search-label-width: 14px;  // 搜索组件的label单位宽度
+
+// base color
+$blue:#324157;
+$light-blue:#3A71A8;
+$red:#C03639;
+$pink: #E65D6E;
+$green: #30B08F;
+$tiffany: #4AB7BD;
+$yellow:#FEC171;
+$green:#71fe9b;
+$panGreen: #30B08F;
+$color-white: #ffffff;
+$color-border: #d8dce5;
+$flow-back: #F2F2F2;
+$bg-main: #f5f8fa;
+$dialog-line: rgba(0,0,0,0.12);
+
+// sidebar
+$menuText:#bfcbd9;
+$menuActiveText:#409EFF;
+$subMenuActiveText:#f4f4f5; // https://github.com/ElemeFE/element/issues/12951
+
+$menuBg:#304156;
+$menuHover:#263445;
+
+$subMenuBg:#1f2d3d;
+$subMenuHover:#001528;
+
+$sideBarWidth: 210px;
+
+// 24px字体
+$--font-24: 24px;
+
+// 22px字体
+$--font-22: 22px;
+
+// 20px字体
+$--font-20: 20px;
+
+// 18px字体
+$--font-18:18px;
+
+// 16px字体
+$--font-16:16px;
+
+// 14px字体
+$--font-14:14px;
+
+// 12px字体：
+$--font-12:12px;
+
+// #333颜色
+$--color-333: #333;
+
+// #666颜色
+$--color-666: #666;
+
+// #999颜色
+$--color-999: #999;
+
+// 分隔线背景色
+$--bg1-line: #f5f7fa;
+$--bg2-line: #e7e8e9;
+
+// font颜色
+$font1: rgba(0, 0, 0, 0.25);
+$font2: rgba(0, 0, 0, 0.45);
+$font3: rgba(0, 0, 0, 0.65);
+$font4: rgba(0, 0, 0, 0.85);
+
+$color-success: #6cd23a;
+$color-danger: #f03b2c;
+$color-warning: #f2ac00;
+$color-info: #9b9fa6;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+}

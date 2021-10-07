@@ -1,0 +1,37 @@
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~kingstar-ui/lib/theme-chalk/fonts';
+/* 改变 图片 路径变量，必需 */
+$--image-path: '~kingstar-ui/lib/theme-chalk/assets';
+
+@import "~kingstar-ui/packages/theme-chalk/src/index";
+
+
+.ks-drawer{
+  .ks-drawer__body{
+    overflow-y:auto;
+  }
+  
+}
+.ks-dropdown-menu {
+  .ks-dropdown-menu__item {
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+
+    .ks-color-picker {
+      height: 20px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.ks-checkbox__inner:after {
+  border-left: 0 !important;
+  border-top: 0 !important;
+}
+
+:export {
+  theme: $--color-primary;
+}

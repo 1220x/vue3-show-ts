@@ -1,0 +1,357 @@
+
+
+.font-color-white{
+    color:$color-white !important;
+}
+
+.show-required.is-required:before{
+    content: "*";
+    color: #f56c6c;
+    margin-right: 4px;
+}
+@function getSpace($num){
+    @return $num * $space;
+}
+@for $i from 0 to 50 {
+    .p-#{$i}{
+        padding: getSpace($i) !important;
+    }
+    .pl-#{$i}{
+        padding-left: getSpace($i) !important;
+    }
+    .pr-#{$i}{
+        padding-right: getSpace($i) !important;
+    }
+    .pt-#{$i}{
+        padding-top: getSpace($i) !important;
+    }
+    .pb-#{$i}{
+        padding-bottom: getSpace($i) !important;
+    }
+    .px-#{$i}{
+        padding-left: getSpace($i) !important;
+        padding-right: getSpace($i) !important;
+    }
+    .py-#{$i}{
+        padding-top: getSpace($i) !important;
+        padding-bottom: getSpace($i) !important;
+    }
+    .m-#{$i}{
+        margin: getSpace($i) !important;
+    }
+    .ml-#{$i}{
+        margin-left: getSpace($i) !important;
+    }
+    .mr-#{$i}{
+        margin-right: getSpace($i) !important;
+    }
+    .mt-#{$i}{
+        margin-top: getSpace($i) !important;
+    }
+    .mb-#{$i}{
+        margin-bottom: getSpace($i) !important;
+    }
+    .mx-#{$i}{
+        margin-left: getSpace($i) !important;
+        margin-right: getSpace($i) !important;
+    }
+    .my-#{$i}{
+        margin-top: getSpace($i) !important;
+        margin-bottom: getSpace($i) !important;
+    }
+}
+.icon-space{
+    margin-right: $space / 2;
+}
+
+@for $i from 6 to 32 {
+    .h-#{2*$i}{
+        font-size: $i * 2px
+    }
+}
+
+.main-out {
+    height: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-y: auto !important;
+    background-color: #f5f5f5;
+}
+
+.pointer{
+    cursor: pointer;
+}
+.t-left{
+    text-align: left;
+}
+.t-center{
+    text-align: center;
+}
+.t-right{
+    text-align: right;
+}
+.v-middle{
+    vertical-align: middle;
+}
+.v-top{
+    vertical-align: top;
+}
+.v-baseline{
+    vertical-align: baseline;
+}
+.f-right{
+    float: right;
+}
+.f-left{
+    float: left;
+}
+
+.full{
+    width: 100%;
+}
+.half{
+    width: 50%;
+}
+
+.height-full{
+    height: 100%;
+}
+
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.fixed{
+    position: fixed;
+}
+.flex{
+    display: flex;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.inline-block{
+    display: inline-block;
+}
+.dot-hidden{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.overflow-auto{
+    overflow: auto;
+}
+.overflow-scroll{
+    overflow: scroll;
+}
+.x-hidden{
+    overflow-x: hidden;
+}
+.x-scroll{
+    overflow-x: scroll;
+}
+.x-auto{
+    overflow-x: auto;
+}
+.y-hidden{
+    overflow-y: hidden;
+}
+.y-scroll{
+    overflow-y: scroll;
+}
+.y-auto{
+    overflow-y: auto;
+}
+// 全局icon操作图标样式设置
+.operate-icon-btn{
+    border: none;
+    padding: 0 !important;
+    vertical-align: sub;
+    &:not(:first-child){
+        margin-left: 10px;
+    }
+    &.is-disabled{
+        opacity: 0.4;
+    }
+}
+// ks按钮图标样式统一设置
+.operate-icon{
+    pointer-events: none;
+    font-size: 22px !important;
+}
+// 表格上方非ks-search模块周边间隙和ks-search统一化
+.page-header-space{
+    margin: 0 5px 5px 5px;
+}
+
+.bd{
+    border: 1px solid $color-border;
+}
+.bd-t{
+    border-top: 1px solid $color-border;
+}
+.bd-l{
+    border-left: 1px solid $color-border;
+}
+.bd-r{
+    border-right: 1px solid $color-border;
+}
+.bd-b{
+    border-bottom: 1px solid $color-border;
+}
+.bd-x{
+    border-left: 1px solid $color-border;
+    border-right: 1px solid $color-border;
+}
+.bd-y{
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+}
+.bd-dotted{
+    border: 1px dotted $color-border;
+}
+.bd-dotted-t{
+    border-top: 1px dotted $color-border;
+}
+.bd-dotted-l{
+    border-left: 1px dotted $color-border;
+}
+.bd-dotted-r{
+    border-right: 1px dotted $color-border;
+}
+.bd-dotted-b{
+    border-bottom: 1px dotted $color-border;
+}
+.bd-dotted-x{
+    border-left: 1px dotted $color-border;
+    border-right: 1px dotted $color-border
+}
+.bd-dotted-y{
+    border-top: 1px dotted $color-border;
+    border-bottom: 1px dotted $color-border;
+}
+.bd-white{
+    border: 1px solid $color-white;
+}
+.circle{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+}
+
+.font-style {
+    font-size: 14px;
+    color: rgba(0,0,0,0.65);
+}
+
+.font-title{
+    font-size: 14px;
+    color: rgba(0,0,0,0.85);
+    font-weight: 500;
+}
+
+.el-row{
+    margin-bottom: -30px;
+    display: flex;
+    flex-wrap: wrap
+}
+
+
+// ----新的全局样式----
+
+// 表格中的(操作)文字按钮之间的分割线
+.common-button-parting-line {
+    height: 20px;
+    margin: 0px 12px;
+    border-left: 1px solid #d3dce6;
+}
+
+// 白色背景色样式
+.common-bg-white {
+    background-color: $color-white;
+}
+
+// 主背景样式
+.common-bg-main {
+    background-color: $bg-main;
+}
+
+// “查询结果”  的样式
+.common-result-label {
+    font-size: 14px;
+    color: #333333;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-left: 20px
+}
+
+// 分区--各区域的名称样式
+.common-area-label {
+    font-size: 14px;
+    color: #5E78A2;
+    font-weight: 600;
+    line-height: 16px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    padding-left: 16px;
+    border-bottom: 1px solid #A3B2C9;
+    margin-bottom: 16px;
+}
+
+// 按钮固定在页面底部时，加上box-shadow
+.common-box-shadow {
+    box-shadow: -3px -3px 5px #999999;
+}
+
+// 金额转换为汉字的样式
+.common-case-text {
+    color: rgb(10, 101, 192);
+    font-size: 12px;
+    font-weight: 500;
+}  
+
+// 圆角
+.common-radius{
+    border-radius: $radius;
+}
+
+// 表格内的滚动条样式----解决弹窗内有表格时，表格的滚动条样式问题
+.ks-table {
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        width: 10px;
+        background-color: #DADEE8;
+    }
+    ::-webkit-scrollbar-track {
+        width: 10px;
+        border-radius: 10px;
+        background-color: #ffffff;
+    }
+}
+
+// 选择框样式
+.picker-form-item {
+    .ks-select {
+        width: $form-item1 * 2 + 103;
+        border-radius: $radius;
+        .ks-input {
+            width: $form-item1 * 2 + 103;
+            border-radius: $radius;
+        }
+        .ks-input__suffix-inner {
+            display: none;
+        }
+    }
+}
