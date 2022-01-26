@@ -6,6 +6,21 @@
   <router-view/>
 </template>
 
+<script lang="ts">
+import { defineComponent } from 'vue'
+import MenuBar from './components/Bar.vue'
+import ItemList from './components/List.vue'
+import MemoEditor from './components/Editor.vue'
+export default defineComponent({
+    name: 'App',
+    // components: {
+    //     MenuBar,
+    //     ItemList,
+	// 	MemoEditor
+    // }
+})
+</script>
+
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
